@@ -20,7 +20,9 @@ jobs:
     
     steps:
       - name: Hello Windows!
-        run: echo 'Hello Windows!'
+        run: |
+          echo 'Data Windows:'
+          date
         
   print_macos:
     name: Hello MacOs
@@ -28,7 +30,9 @@ jobs:
     
     steps:
       - name: Hello MacOS!
-        run: echo 'Hello MacOS!'
+        run: |
+          echo 'Data MacOS:'
+          date
         
   print_final:
     name: Finalizado
