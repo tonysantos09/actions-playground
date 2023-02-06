@@ -10,7 +10,9 @@ jobs:
     
     steps:
       - name: Hello Ubuntu!
-        run: echo 'Data Ubuntu:' +date
+        run: |
+          echo 'Data Ubuntu:'
+          date
         
   print_windows:
     name: Hello Windows
