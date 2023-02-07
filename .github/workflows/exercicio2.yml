@@ -1,0 +1,13 @@
+name: "Exercício 2"
+
+on: push
+  
+jobs:
+  gerenciar_artefato:
+    name: "Gerenciar Artefato"
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v3.3.0
